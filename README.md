@@ -20,6 +20,8 @@ This project is a deep learning-based image classification web application that 
 - Classes: Clean, Mold Detected, Invalid
 - Model file: mold_model_optimized.pt
 
+- Note: The dataset used for training and testing is not included in this repository. You may create your own dataset under a data/ folder structured as train/, val/, and test/.
+
 ## Installation
 
 1. Clone the repository:

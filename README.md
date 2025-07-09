@@ -1,6 +1,6 @@
 # Mold Detection Web Application
 
-Graduation Project by Ezgi Sağlam  
+Graduation Project by Ezgi Sağlam & Berin Er
 Istanbul Aydın University – Department of Software Engineering
 
 This project is a deep learning-based image classification web application that detects mold presence in Petri dish images using a convolutional neural network (CNN) developed with PyTorch and deployed via Streamlit.

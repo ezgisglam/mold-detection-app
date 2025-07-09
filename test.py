@@ -21,7 +21,7 @@ transform = transforms.Compose([
 y_true = []
 y_pred = []
 
-# Test setindeki tüm görselleri sırayla al
+# Get all of the images in the testset in order.
 for label_folder in os.listdir(test_folder):
     class_folder = os.path.join(test_folder, label_folder)
 
@@ -38,7 +38,7 @@ for label_folder in os.listdir(test_folder):
                 output = model(image)
                 prediction = 1 if output.item() > 0.5 else 0
 
-            # Gerçek etiket (klasör adına göre)
+            # lables by folder name
             true_label = 1 if label_folder.lower() == "mold" else 0
 
             y_true.append(true_label)
@@ -47,7 +47,7 @@ for label_folder in os.listdir(test_folder):
             result = "Mold Detected" if prediction == 1 else "Clean"
             print(f"{filename} ({label_folder}) --> Prediction: {result}")
 
-# Skorları yazdır
+# Print Scores
 print("\nConfusion Matrix:")
 print(confusion_matrix(y_true, y_pred))
 

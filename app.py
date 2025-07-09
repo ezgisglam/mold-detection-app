@@ -71,7 +71,7 @@ if page == "Main Panel":
 
             color = "red" if prediction == "Mold Detected" else "green"
 
-            # Görseli base64'e çevirme
+            # Convert image to base64
             buffered = io.BytesIO()
             display_image.save(buffered, format="PNG")
             img_base64 = base64.b64encode(buffered.getvalue()).decode()

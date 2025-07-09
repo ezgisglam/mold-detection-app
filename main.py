@@ -10,7 +10,7 @@ import os
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Dataset path
-dataset_path = "/Users/ezgisaglam/Desktop/dataset"
+dataset_path = "/your/path/here"
 
 # Transforms
 transform = transforms.Compose([

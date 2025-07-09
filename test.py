@@ -7,14 +7,12 @@ import numpy as np
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Modeli yükle
+# Upload model
 model = torch.jit.load("mold_model_optimized.pt").to(device)
 model.eval()
 
-# Klasör yolu
-test_folder = "/Users/ezgisaglam/Desktop/testset"
+test_folder = "/your/path/here"
 
-# Görsel işlemleri
 transform = transforms.Compose([
     transforms.Resize((64, 64)),
     transforms.ToTensor()

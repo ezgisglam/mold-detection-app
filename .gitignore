@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pt
+*.pth
+.env
+*.csv
+myenv/
+pytorch_env/
+torch_venv/
+.DS_Store
